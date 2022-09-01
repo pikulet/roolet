@@ -1,13 +1,13 @@
-import "bootstrap/dist/css/bootstrap.css";
+import 'bootstrap/dist/css/bootstrap.css';
 
-import Header from "./components/header/header";
-import Roolet from "./roolet/roolet";
+import Header from './components/header/header';
+import Roolet from './roolet/roolet';
 
 export default function App() {
-  return (
-    <div className="App">
-      <Header></Header>
-      <Roolet></Roolet>
-    </div>
-  );
+    return (
+        <div className="App">
+            <Header></Header>
+            <Roolet></Roolet>
+        </div>
+    );
 }
