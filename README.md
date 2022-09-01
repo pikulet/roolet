@@ -7,3 +7,5 @@ A discrete event visualiser with xkcd graphics. Inspired by Roulette betting rou
 ## Credits
 
 Main Logo: [Font](https://www.dafont.com/d-sketch.font), [Dice Image](https://favpng.com/png_view/dice-drawing-dice-sketch-png/piYjC5qg)
+
+[ChartXkcd (React wrapper)](https://github.com/obiwankenoobi/chart.xkcd-react)
