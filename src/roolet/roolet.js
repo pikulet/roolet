@@ -1,7 +1,6 @@
-
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 
 import Params from "./parameters/params";
 import Graphs from "./graphs/graphs";
@@ -12,13 +11,13 @@ export default function Roolet() {
     <Container>
       <Row>
         <Col xs={12} lg={3}>
-            <Params></Params>
+          <Params></Params>
         </Col>
         <Col xs={12} lg={7}>
-            <Graphs></Graphs>
+          <Graphs></Graphs>
         </Col>
         <Col xs={12} lg={2}>
-            <Summary></Summary>
+          <Summary></Summary>
         </Col>
       </Row>
     </Container>
