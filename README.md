@@ -1,6 +1,8 @@
 # :game_die: roolet :game_die:
 
-![roolet](https://github.com/pikulet/roolet/blob/master/src/images/roolet.png)
+<p align="center">
+  <img src="https://github.com/pikulet/roolet/blob/master/src/images/roolet.png" width="600">
+</p>
 
 A discrete event visualiser with xkcd graphics. Inspired by Roulette betting routines and risk-spreading techniques.
 
