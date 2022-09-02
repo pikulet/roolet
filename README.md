@@ -8,7 +8,7 @@ A discrete event visualiser with xkcd graphics. Inspired by Roulette betting rou
 
 ## Functional Improvements
 
-- Reduce the number of data points in simulations with a large number of rounds. The chart.xkcd library did not allow this value to be configured. One workaround is to compact the number of datapoints into histogram buckets.
+- Reduce the number of data points in simulations with a large number of rounds. The chart.xkcd library did not allow the x-axis ticks to be configured. One workaround is to compact the number of datapoints into histogram buckets.
 - Support multiple bet strategies in one visualisation. A weighted visualisation can be provided, with the bet amount being the weight.
 - Support default configuration patterns. The application is not trivial to configure, so some default options like 'Roulette', '1 to 24', 'Red' can be provided.
 - Data validation.
