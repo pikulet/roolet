@@ -5,7 +5,7 @@ class BetField extends React.Component {
   render() {
     const { type, defaultValue, onBetChange } = this.props
     return (
-      <Form.Group className="betField">
+      <Form.Group>
         <Form.Control
           type="input"
           placeholder={defaultValue}

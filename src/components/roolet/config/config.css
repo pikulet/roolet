@@ -1,0 +1,9 @@
+.globalInput {
+  padding-bottom: 1em;
+}
+
+.simulateButton {
+  display: flex;
+  justify-content: center;
+  margin: 2em auto;
+}

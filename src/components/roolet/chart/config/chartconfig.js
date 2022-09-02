@@ -1,13 +1,15 @@
 import React from 'react'
 
 import { Form } from 'react-bootstrap'
+
+import Container from 'react-bootstrap/Container'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
+
 import ChartFunction from '../const/functions'
 import ChartType from '../const/types'
 
 import ChartInput from './chartinput'
-import Container from 'react-bootstrap'
-import Row from 'react-bootstrap/Row'
-import Col from 'react-bootstrap/Col'
 
 class ChartConfig extends React.Component {
   render() {

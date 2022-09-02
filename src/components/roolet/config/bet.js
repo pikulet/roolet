@@ -10,30 +10,27 @@ class BetInput extends React.Component {
     const { defaultBet, onBetChange } = this.props
 
     return (
-      <div className="config-bet">
+      <div>
         <Row>
           <Col md={4}>
             <BetField
               type="num_events"
               defaultValue={defaultBet.num_events}
-              onBetChange={onBetChange}
-            ></BetField>
+              onBetChange={onBetChange}></BetField>
           </Col>
 
           <Col md={4}>
             <BetField
               type="payout"
               defaultValue={defaultBet.payout}
-              onBetChange={onBetChange}
-            ></BetField>
+              onBetChange={onBetChange}></BetField>
           </Col>
 
           <Col md={4}>
             <BetField
               type="amt"
               defaultValue={defaultBet.amt}
-              onBetChange={onBetChange}
-            ></BetField>
+              onBetChange={onBetChange}></BetField>
           </Col>
         </Row>
       </div>

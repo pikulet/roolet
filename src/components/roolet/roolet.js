@@ -4,7 +4,7 @@ import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 
-import Configuration from './config/betconfig'
+import Configuration from './config/config'
 import Chart from './chart/chart'
 
 import update from 'react-addons-update'
@@ -82,8 +82,7 @@ class Roolet extends React.Component {
               state={this.state}
               onGlobalChange={this.onGlobalChange}
               onBetChange={this.onBetChangeGenerator}
-              onSimulate={this.updateHistogram}
-            ></Configuration>
+              onSimulate={this.updateHistogram}></Configuration>
           </Col>
           <Col xs={12} lg={9}>
             <Chart state={this.state}></Chart>

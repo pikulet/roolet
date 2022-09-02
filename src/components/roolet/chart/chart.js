@@ -67,18 +67,20 @@ class Chart extends React.Component {
     return (
       <div>
         <ChartConfig onChange={this.onConfigChange}></ChartConfig>
-        <ActualType
-          config={{
-            title: title,
-            xLabel: xLabel,
-            yLabel: yLabel,
-            data: this.state.generatedDatasets[this.state.config.function],
-            options: {
-              yTickCount: 3,
-              legendPosition: chartXkcd.config.positionType.upLeft
-            }
-          }}
-        />
+        <div className="chart">
+          <ActualType
+            config={{
+              title: title,
+              xLabel: xLabel,
+              yLabel: yLabel,
+              data: this.state.generatedDatasets[this.state.config.function],
+              options: {
+                yTickCount: 3,
+                legendPosition: chartXkcd.config.positionType.upLeft
+              }
+            }}
+          />
+        </div>
       </div>
     )
   }

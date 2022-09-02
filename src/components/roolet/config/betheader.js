@@ -5,12 +5,13 @@ import Col from 'react-bootstrap/Col'
 
 class BetHeader extends React.Component {
   render() {
+    const { labels } = this.props
     return (
-      <div className="config-bet-header">
+      <div>
         <Row>
-          <Col md={4}>Pr</Col>
-          <Col md={4}>X</Col>
-          <Col md={4}>$</Col>
+          {labels.map((e, i) => {
+            return <Col md={4}>{e}</Col>
+          })}
         </Row>
       </div>
     )
