@@ -12,8 +12,7 @@ import './config.css'
 
 class Configuration extends React.Component {
   render() {
-    const { defaultState, state, onGlobalChange, onBetChange, onSimulate } =
-      this.props
+    const { defaultState, onGlobalChange, onBetChange, onSimulate } = this.props
 
     return (
       <Container>
@@ -22,24 +21,15 @@ class Configuration extends React.Component {
           type="num_rounds"
           defaultValue={defaultState.num_rounds}
           onChange={onGlobalChange}></GlobalInput>
-
         <GlobalInput
           label="total no. squares"
           type="num_events"
           defaultValue={defaultState.num_events}
           onChange={onGlobalChange}></GlobalInput>
-
-        <BetHeader labels={['coverage ', 'payout(x)', 'bet amt']}></BetHeader>
-
-        {[...Array(state.bets.length)].map((e, i) => {
-          return (
-            <BetInput
-              defaultBet={defaultState.bets[0]}
-              onBetChange={onBetChange(i)}
-              key={i}></BetInput>
-          )
-        })}
-
+        <BetHeader labels={['coverage', 'payout', 'bet amt']}></BetHeader>
+        <BetInput
+          defaultBet={defaultState.bet}
+          onBetChange={onBetChange}></BetInput>
         <Button className="simulateButton" onClick={onSimulate} variant="info">
           Simulate
         </Button>

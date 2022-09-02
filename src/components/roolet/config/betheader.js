@@ -10,7 +10,11 @@ class BetHeader extends React.Component {
       <div>
         <Row>
           {labels.map((e, i) => {
-            return <Col md={4}>{e}</Col>
+            return (
+              <Col key={i} md={4}>
+                {e}
+              </Col>
+            )
           })}
         </Row>
       </div>

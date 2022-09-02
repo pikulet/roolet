@@ -5,7 +5,7 @@ import Roolet from './components/roolet/roolet'
 
 export default function App() {
   return (
-    <div className="App">
+    <div className="app">
       <Header></Header>
       <Roolet></Roolet>
     </div>

@@ -1,8 +1,6 @@
 const ChartFunction = {
   pmf: 'pmf',
-  pmfWeighted: 'pmf-weighted',
-  reverseCmf: 'reverse-cmf',
-  reverseCmfWeighted: 'reverse-cmf-weighted'
+  reverseCmf: 'reverse-cmf'
 }
 
 export default ChartFunction
