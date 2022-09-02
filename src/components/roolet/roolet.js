@@ -101,9 +101,7 @@ class Roolet extends React.Component {
               data={this.state.generatedData}></Chart>
           </Col>
           <Col xs={12} lg={2}>
-            <Summary
-              bet={this.state.bet}
-              data={this.state.generatedData}></Summary>
+            <Summary state={this.state}></Summary>
           </Col>
         </Row>
       </Container>

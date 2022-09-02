@@ -1,0 +1,12 @@
+.summary p {
+  margin: 0;
+}
+
+.desc {
+  font-size: xx-large;
+}
+
+.value {
+  font-size: xx-large;
+  font-weight: bolder;
+}

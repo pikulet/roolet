@@ -6,9 +6,9 @@ class MultiplierStatistic extends React.Component {
     return (
       <div>
         <p>
-          {message} <span>{type}</span>
+          {message} <span className="desc">{type}</span>
         </p>
-        <h3> {percentage} </h3>
+        <p className="value text-info">{percentage} %</p>
       </div>
     )
   }

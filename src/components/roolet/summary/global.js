@@ -5,8 +5,11 @@ class GlobalStatistic extends React.Component {
     const { message, value } = this.props
     return (
       <div>
-        <p> {message} </p>
-        <h3> {value} </h3>
+        <p>{message}</p>
+        <p className="value">
+          <span>$</span>
+          <span>{value}</span>
+        </p>
       </div>
     )
   }

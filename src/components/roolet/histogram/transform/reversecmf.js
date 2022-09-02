@@ -1,5 +1,4 @@
 function toReverseCmf(histogram) {
-  console.log(histogram.probabilities)
   const cmf_probabilities = []
   var p = 0
   for (let i = histogram.probabilities.length - 1; i > -1; i--) {

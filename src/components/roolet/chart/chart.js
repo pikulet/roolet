@@ -7,6 +7,8 @@ import ChartConfig from './config/chartconfig'
 import ChartType from './const/types'
 import ChartFunction from './const/functions'
 
+export const CHART_MAX_XLABEL = 15
+
 class Chart extends React.Component {
   constructor(props) {
     super(props)
@@ -39,7 +41,7 @@ class Chart extends React.Component {
     return (
       <div>
         <ChartConfig onChange={this.onConfigChange}></ChartConfig>
-        <div className="chart">
+        <div>
           <ActualType
             config={{
               title: title,
@@ -47,7 +49,7 @@ class Chart extends React.Component {
               yLabel: yLabel,
               data: data[this.state.function],
               options: {
-                yTickCount: 5,
+                yTickCount: 4,
                 legendPosition: chartXkcd.config.positionType.upLeft
               }
             }}
