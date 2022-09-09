@@ -7,6 +7,8 @@ import ChartConfig from './config/chartconfig'
 import ChartType from './const/types'
 import ChartFunction from './const/functions'
 
+import './chart.css'
+
 export const CHART_MAX_XLABEL = 15
 
 class Chart extends React.Component {
@@ -41,7 +43,7 @@ class Chart extends React.Component {
     return (
       <div>
         <ChartConfig onChange={this.onConfigChange}></ChartConfig>
-        <div>
+        <div className="actualChart">
           <ActualType
             config={{
               title: title,

@@ -26,7 +26,13 @@ class Configuration extends React.Component {
           type="num_events"
           defaultValue={defaultState.num_events}
           onChange={onGlobalChange}></GlobalInput>
-        <BetHeader labels={['coverage', 'payout', 'bet amt']}></BetHeader>
+        <BetHeader
+          labels={['cover', 'payout', 'bet']}
+          messages={[
+            'e.g. 1st 12 = 12, red = 24, single = 1',
+            'e.g. 1st 12 payout = 2x',
+            'your bet'
+          ]}></BetHeader>
         <BetInput
           defaultBet={defaultState.bet}
           onBetChange={onBetChange}></BetInput>
